@@ -4,4 +4,4 @@
 /.idea/libraries
 .DS_Store
 /build
-/proguard-rules.pro
+/app/proguard-rules.pro
