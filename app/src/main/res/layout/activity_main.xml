@@ -8,6 +8,7 @@
         android:id="@+id/buttonUrl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Store" />
-
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="Store" />
 </LinearLayout>
