@@ -3,6 +3,8 @@
 package com.ablinx.gamewithstore;
 
 import android.app.Activity;
+import android.net.http.SslError;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -17,7 +19,13 @@ public class WebViewClientImpl extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView webView, String url) {
-        return true;
+        return false;
     }
 
+    @Override
+    public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+        // Ignore SSL certificate errors
+        // See http://stackoverflow.com/questions/7416096/android-webview-not-loading-https-url
+        handler.proceed();
+    }
 }

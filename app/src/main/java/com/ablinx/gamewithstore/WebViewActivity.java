@@ -28,7 +28,7 @@ public class WebViewActivity extends Activity {
         WebViewClientImpl webViewClient = new WebViewClientImpl(this);
         webView.setWebViewClient(webViewClient);
 
-        webView.loadUrl("http://tutorials.jenkov.com");
+        webView.loadUrl("https://ablinx.com/store/candyletters");
 
         button = (Button) findViewById(R.id.buttonHome);
 
